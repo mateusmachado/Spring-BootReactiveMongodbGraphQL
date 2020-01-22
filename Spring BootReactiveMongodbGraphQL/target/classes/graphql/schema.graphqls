@@ -1,0 +1,24 @@
+type Price {
+    productId: ID!
+    loc: Int
+    productGrandId: Int
+    regularRetail: BigDecimal
+    unitRetail: BigDecimal
+    sellingUnitRetail: Int
+    clearanceInd: Boolean
+    sku: Int
+    creationDate: String!
+}
+type Query {
+    findAllPrice: [Price]
+    findPriceByProductId(productId: ID): Price
+    countPrice: Int
+}
+
+type Mutation {
+    newPrice(productId: String!, loc: Int!, productGrandId: Int!, regularRetail: Int!, unitRetail: Int! sellingUnitRetail: Int!, clearanceInd: Boolean!, sku: Int!): Price
+}
+
+type Subscription {
+    getNewPrice: Price!
+}

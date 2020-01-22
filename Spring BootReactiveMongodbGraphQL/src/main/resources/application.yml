@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: graphql-java-tools-app
+  data:
+    mongodb:
+      authentication-database: admin
+      database: price
+      username: admin
+      password: admin
+      port: 27017
+      host: localhost
+graphiql:
+  endpoint:
+    subscriptions: /subscriptions

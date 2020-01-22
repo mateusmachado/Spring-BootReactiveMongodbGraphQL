@@ -62,10 +62,6 @@ mutation {
 }
 ```
 
-## Graphql Subscription page
-
-`http://localhost:8080/index.html`
-
 ## Notes
 
 To use subscriptions with Reactive MongoDB the Price collection must be capped.

@@ -12,3 +12,4 @@ spring:
 graphiql:
   endpoint:
     subscriptions: /subscriptions
+    

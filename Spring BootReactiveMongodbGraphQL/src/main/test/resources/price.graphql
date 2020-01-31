@@ -1,0 +1,12 @@
+query {
+  findAllPrice {
+    productId
+    loc
+    productGrandId
+    regularRetail
+    unitRetail
+    sellingUnitRetail
+    clearanceInd
+    sku
+  }
+}

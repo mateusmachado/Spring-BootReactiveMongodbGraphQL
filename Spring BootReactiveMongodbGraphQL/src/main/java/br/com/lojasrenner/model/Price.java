@@ -1,6 +1,6 @@
 package br.com.lojasrenner.model;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -8,6 +8,12 @@ import java.math.BigDecimal;
 
 @Data
 @Document
+@Getter
+@Builder
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
+@Setter(value = AccessLevel.PUBLIC)
+@ToString
 public class Price {
     @Id
     private String productId;
@@ -19,5 +25,4 @@ public class Price {
     private Boolean clearanceInd;
     private Integer sku;
     private String creationDate;
-//    private LocalDateTime lastUpdate;
 }
